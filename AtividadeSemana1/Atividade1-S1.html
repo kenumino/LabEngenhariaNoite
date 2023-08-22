@@ -6,16 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <title>Atividade 1</title>
+    
 </head>
 <body>
     <header>
         <h1>Atividade 1-S1</h1>
     </header>
     <nav>
-        <a href="../Semana1.html">Voltar à semana 1</a>
+        <button><a href="../Semana1.html">Voltar à semana 1</a></button>
     </nav>
     <section>
-        <button></button>
+        <script>
+            let dado = prompt("Olá, Digite algo: ");
+            if(confirm("Deseja ver o tipo de dado? ")){
+                if(isNaN(dado)){
+                    document.write("Tipo de dado é: ");
+                    document.write(typeof(dado));
+                }else {
+                    document.write("Tipo de dado é: ");
+                    document.write("Number");
+                }
+            }else{
+                alert("Obrigado por visitar esta página");
+            }
+        </script>
+ 
     </section>
 </body>
 </html>
