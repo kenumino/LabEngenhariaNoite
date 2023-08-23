@@ -8,8 +8,12 @@
 </head>
 <body>
     <script>
-        const segundos = setTimeout(5000);
-        document.write(segundos);
+        const fullHour = new Date();
+        function autoRefresh() {
+            window.location = window.location.href;
+        }
+        setInterval('autoRefresh()', 1000);
+        document.write(fullHour.getHours(),":", fullHour.getMinutes(),":",fullHour.getSeconds());
     </script>        
 </body>
 </html>
